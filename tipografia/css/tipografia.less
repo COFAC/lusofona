@@ -1,0 +1,80 @@
+// ---------------------------------------------- VM --
+// ULHT: tipografia
+// ----------------------------------------------------
+
+//
+// Variáveis
+// ----------------------------------------------------
+@global-font-size:           16px;
+@global-line-height:         22px;
+
+@global-color:               #444;
+@global-muted-color:         #999;
+
+@global-link-color:          #07D;
+@global-link-hover-color:    #059;
+
+@base-selection-background:  #1fa2d6;
+
+@base-body-font-family:      'Open Sans';
+@base-heading-font-family:   'Open Sans';
+@base-body-font-weight:   800;
+
+//
+// Base
+// ----------------------------------------------------
+@base-h1-font-size:     round(@global-font-size * 2.85);    // 46px
+@base-h1-line-height:   round(@base-h1-font-size * 1.25);   // 50.59px
+@base-h2-font-size:     round(@global-font-size * 2.28);    // 36px
+@base-h2-line-height:   round(@base-h2-font-size * 1.25);   // 39.59px
+@base-h3-font-size:     round(@global-font-size * 1.71);    // 27px
+@base-h3-line-height:   round(@base-h3-font-size * 1.25);   // 29.70px
+@base-h4-font-size:     round(@global-font-size * 1.28);    // 20px
+@base-h4-line-height:   round(@base-h4-font-size * 1.33);   // 22px
+
+@text-small-font-size:      round((@global-font-size * 0.78));      // 12px
+@text-small-line-height:    round((@text-small-font-size * 1.49));  // 18px
+@text-large-font-size:      round((@global-font-size * 1.28));      // 20px
+@text-large-line-height:    round((@text-large-font-size * 1.32));  // 26px
+
+@text-muted-color:          @global-muted-color;
+
+//
+// HTML
+// ----------------------------------------------------
+body {
+    font-family: @base-body-font-family;
+    font-size: @global-font-size;
+    line-height: @global-line-height;
+}
+h1 {
+    font-family: @base-heading-font-family;
+    font-size: @base-h1-font-size;
+}
+h2 {
+    font-family: @base-heading-font-family;
+    font-size: @base-h2-font-size;
+}
+h3 {
+    font-family: @base-heading-font-family;
+    font-size: @base-h3-font-size;
+}
+h4 {
+    font-family: @base-heading-font-family;
+    font-size: @base-h4-font-size;
+}
+
+th, strong {
+    font-weight: @base-body-font-weight;
+    }
+//
+// CLASSES
+// ----------------------------------------------------
+.txt-pequeno {
+    font-size: @text-small-font-size;
+    line-height: @text-small-line-height;
+    }
+.txt-grande {
+    font-size: @text-large-font-size;
+    line-height: @text-large-line-height;
+    }
